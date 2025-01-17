@@ -9,5 +9,19 @@
         "name": "Anderson da Campo"
     },
     "items": [
+        {
+            "id": "https://andersonc.dev.br/construindo-um-ambiente-robusto-e-escalavel.html",
+            "url": "https://andersonc.dev.br/construindo-um-ambiente-robusto-e-escalavel.html",
+            "title": "Construindo um Ambiente Robusto e Escalável",
+            "summary": "Atualmente, estou trabalhando em um projeto desafiador que combina infraestrutura bem planejada, automação eficiente e monitoramento avançado. O objetivo é garantir flexibilidade e estabilidade para múltiplas versões de aplicações, com ambientes de testes isolados e produção escalável. Progresso Atual Cluster Docker Swarm Foi configurado um&hellip;",
+            "content_html": "<p>Atualmente, estou trabalhando em um projeto desafiador que combina infraestrutura bem planejada, automação eficiente e monitoramento avançado. O objetivo é garantir flexibilidade e estabilidade para múltiplas versões de aplicações, com ambientes de testes isolados e produção escalável.</p><p>Progresso Atual</p><p>Cluster Docker Swarm</p><p>Foi configurado um cluster Docker Swarm no ambiente de produção para atender às demandas do projeto. A infraestrutura inclui managers dedicados para proxy reverso e serviços de monitoramento, além de workers segmentados para bancos de dados, APIs, aplicações web e storage.</p><p>O ambiente de testes foi isolado em máquinas dedicadas, replicando o ambiente de produção de forma fiel para garantir máxima confiabilidade.</p><p>Configuração do Traefik</p><p>O Traefik foi configurado para gerenciar rotas HTTP/HTTPS e conexões externas para serviços críticos, como KeyDB e RabbitMQ. Scripts foram integrados ao GitLab CI para criar labels dinâmicas, alinhando as rotas do Traefik com as releases em desenvolvimento. Essa abordagem assegura compatibilidade entre aplicações web e desktop versionadas, atendendo a uma das principais estratégias do projeto.</p><p>Monitoramento</p><p>O monitoramento centralizado foi implementado com Prometheus e Node Exporter, enquanto o Grafana fornece visualizações personalizadas para análise de métricas e identificação de melhorias necessárias. Essa estrutura oferece uma visão clara sobre o desempenho e a saúde do ambiente.</p><p>Desafios em Andamento</p><p>Gerenciamento eficiente de múltiplas versões de aplicações entre os ambientes de testes e produção.</p><p>Escalabilidade contínua, garantindo alta disponibilidade e flexibilidade para a equipe de desenvolvimento.</p><p>Automação completa do pipeline de deploy, reduzindo erros e acelerando o processo de entrega.</p><p>Este projeto continua em evolução, com foco em soluções robustas e práticas para atender às demandas técnicas e estratégicas da equipe. O objetivo final é estabelecer um ambiente confiável e eficiente, que suporte o crescimento e a inovação.</p>",
+            "author": {
+                "name": "Anderson da Campo"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-01-16T23:50:04-03:00",
+            "date_modified": "2025-01-16T23:50:04-03:00"
+        }
     ]
 }
