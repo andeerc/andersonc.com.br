@@ -1,1 +1,0 @@
-# andersonc.com.br
