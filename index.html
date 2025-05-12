@@ -1,34 +1,153 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>andersonc.dev</title><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://andersonc.dev.br/"><link rel="alternate" type="application/atom+xml" href="https://andersonc.dev.br/feed.xml"><link rel="alternate" type="application/json" href="https://andersonc.dev.br/feed.json"><meta property="og:title" content="andersonc.dev"><meta property="og:site_name" content="andersonc.dev"><meta property="og:description" content=""><meta property="og:url" content="https://andersonc.dev.br/"><meta property="og:type" content="website"><link rel="stylesheet" href="https://andersonc.dev.br/assets/css/style.css?v=0889a9e4983f435ade899e29034c2a7a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"andersonc.dev","url":"https://andersonc.dev.br/"}</script><style></style><noscript><style>img[loading]{opacity:1;}</style></noscript></head><body class="home-template"><header class="topbar" id="js-header"><div class="topbar__inner"><a class="logo" href="https://andersonc.dev.br/">andersonc.dev</a><nav class="navbar"><button class="navbar__toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://andersonc.dev.br/sobre.html">Sobre</a></li></ul></nav></div></header><div class="main-content"><div class="infobar"><div class="infobar__update">Last Updated: <time datetime="2025-01-17T00:09">sexta-feira, 17 janeiro 2025</time></div><div class="infobar__search"></div></div><main class="main l-grid l-grid--2col-1-4"><article class="c-card"><div class="c-card__wrapper"><a href="https://andersonc.dev.br/construindo-um-ambiente-robusto-e-escalavel.html" class="c-card__image"><img src="https://andersonc.dev.br/media/posts/2/traefik.png" srcset="https://andersonc.dev.br/media/posts/2/responsive/traefik-xs.png 300w, https://andersonc.dev.br/media/posts/2/responsive/traefik-sm.png 480w, https://andersonc.dev.br/media/posts/2/responsive/traefik-md.png 768w, https://andersonc.dev.br/media/posts/2/responsive/traefik-lg.png 1024w" sizes="(max-width: 1024px) 100vw, 1024px" loading="lazy" height="990" width="1400" alt="traefik-docker"></a><header class="u-header"><h1 class="c-card__title"><a href="https://andersonc.dev.br/construindo-um-ambiente-robusto-e-escalavel.html">Construindo um Ambiente Robusto e Escalável</a></h1><div class="u-header__meta u-small"><img src="https://www.gravatar.com/avatar/ebb60150ef5e12ec53ba51f6b4caf6b3?s&#x3D;240" loading="lazy" class="u-header__avatar" alt="Anderson da Campo" height="240" width="240"><div><a href="https://andersonc.dev.br/authors/anderson/" title="Anderson da Campo">Anderson da Campo</a> <time datetime="2025-01-16T23:50">quinta-feira, 16 janeiro 2025</time></div></div></header></div></article></main><div class="sidebar"><section class="box authors"><h3 class="box__title">Authors</h3><ul class="authors__cotainer"><li class="authors__item"><a href="https://andersonc.dev.br/authors/anderson/" class="authors__image-link"><img src="https://www.gravatar.com/avatar/ebb60150ef5e12ec53ba51f6b4caf6b3?s&#x3D;240" loading="lazy" alt="Anderson da Campo" height="240" width="240"></a><div><a href="https://andersonc.dev.br/authors/anderson/" class="authors__title">Anderson da Campo</a> <span class="u-small">Post: 1</span></div></li></ul></section></div><footer class="footer"><a class="footer__logo" href="https://andersonc.dev.br/">andersonc.dev</a><nav><ul class="footer__nav"></ul></nav><div class="footer__copyright"><p>Powered by Publii</p></div></footer></div><script>window.publiiThemeMenuConfig = {    
-        mobileMenuMode: 'sidebar',
-        animationSpeed: 300,
-        submenuWidth: 'auto',
-        doubleClickTime: 500,
-        mobileMenuExpandableSubmenus: true, 
-        relatedContainerForOverlayMenuSelector: '.navbar',
-   };</script><script defer="defer" src="https://andersonc.dev.br/assets/js/scripts.min.js?v=18a65c58aef57c0287e0f0609f3389a9"></script><script>var images = document.querySelectorAll('img[loading]');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anderson da Campo • Portfólio & Currículo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f5f5f5; color: #333; }
+    header { background: #282c34; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin: 5px 0; font-size: 1rem; }
+    .container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+    section { background: #fff; margin-bottom: 20px; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-bottom: 15px; }
+    ul { list-style: none; padding-left: 0; }
+    ul li { margin-bottom: 10px; }
+    .project ul { list-style: disc inside; }
+    footer { text-align: center; padding: 15px; background: #282c34; color: #fff; }
+    a { color: #007acc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact p { margin: 5px 0; }
+    .skills-columns { display: flex; flex-wrap: wrap; gap: 20px; }
+    .skills-columns div { flex: 1 1 45%; }
+  </style>
+</head>
+<body>
 
-      for (var i = 0; i < images.length; i++) {
-         if (images[i].complete) {
-               images[i].classList.add('is-loaded');
-         } else {
-               images[i].addEventListener('load', function () {
-                  this.classList.add('is-loaded');
-               }, false);
-         }
-      }</script>
-        <!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/67eb40aad67fa61906208e0d/1innf9771';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
-        <!--End of Tawk.to Script-->
-        </body></html>
+<header>
+  <h1>Anderson da Campo</h1>
+  <p>Desenvolvedor Back-end • DevOps • SysAdmin • Automação & IA</p>
+</header>
 
-      
+<div class="container">
+
+  <section class="contact">
+    <h2>Contato</h2>
+    <p>📞 (55) 49 9 9915-8383</p>
+    <p>✉️ <a href="mailto:andersonc@andersonc.dev.br">andersonc@andersonc.dev.br</a></p>
+    <p>🔗 <a href="https://linkedin.com/in/andersonc-dev" target="_blank">linkedin.com/in/andersonc-dev</a></p>
+    <p>💻 <a href="https://github.com/andeerc" target="_blank">github.com/andeerc</a></p>
+    <p>📍 Chapecó, Santa Catarina</p>
+  </section>
+
+  <section>
+    <h2>Objetivo Profissional</h2>
+    <p>
+      Atuar como Desenvolvedor Back-end, Engenheiro DevOps e SysAdmin, contribuindo na criação de APIs
+      e serviços escaláveis, automação de pipelines CI/CD, infraestrutura em nuvem e monitoramento de sistemas.
+      Busco aplicar boas práticas (TDD, Clean Code, IaC), mensageria, microsserviços, observabilidade e
+      soluções de IA, incluindo engenharia de prompts, integração de LLMs e workflows inteligentes.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experiência Profissional</h2>
+
+    <h3>ControlSoft</h3>
+    <ul>
+      <li><strong>Programador Pleno II</strong> (Set 2023 – Atual)
+        <ul>
+          <li>Reestruturei pipelines CI/CD, reduzindo tempo e erros.</li>
+          <li>Redesenhei ambientes em nuvem, aumentando capacidade 5× sem elevar custos.</li>
+          <li>Implementei observabilidade e métricas completas.</li>
+          <li>Apoiei decisões de arquitetura em soluções web e mensageria.</li>
+        </ul>
+      </li>
+      <li><strong>Programador Júnior I</strong> (Mar 2020 – Nov 2022)
+        <ul>
+          <li>Otimizei aplicação Delphi legada, melhorando performance.</li>
+          <li>Automatizei geração/publicação de executáveis.</li>
+          <li>Liderança técnica em DevOps e automação de CI/CD.</li>
+          <li>Projetei e implementei sistema web central usando REST, WebSocket, cache e filas.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>DataTransp Sistemas</h3>
+    <ul>
+      <li><strong>Programador Trainee</strong> (Out 2019 – Mar 2020)
+        <ul>
+          <li>Manutenção e otimização de ERP.</li>
+          <li>Desenvolvi serviço de monitoramento de NF-e/CT-e.</li>
+        </ul>
+      </li>
+      <li><strong>Analista de Testes</strong> (Abr 2019 – Set 2019)</li>
+      <li><strong>Analista de Suporte Técnico</strong> (Nov 2017 – Mar 2019)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Educação</h2>
+    <p><strong>Unoesc Chapecó</strong> — Tecnólogo em Análise e Desenvolvimento de Sistemas (incompleto, Jan 2019 – Jun 2021)</p>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <div class="skills-columns">
+      <div>
+        <h4>Técnicas</h4>
+        <ul>
+          <li>JavaScript, TypeScript, Python, Rust, C#, Delphi</li>
+          <li>Docker &amp; Swarm, RabbitMQ, WebSocket, Traefik, NGINX</li>
+          <li>Prometheus, Grafana, DNS, Linux Server</li>
+          <li>CI/CD, IaC, Monitoramento, Observabilidade, Automação</li>
+        </ul>
+      </div>
+      <div>
+        <h4>IA &amp; Automação</h4>
+        <ul>
+          <li>Engenharia de Prompts, LLMs (ex: GPT)</li>
+          <li>Workflows com ferramentas de IA (n8n, EvolutionAPI)</li>
+          <li>Agentes inteligentes via WhatsApp &amp; Telegram</li>
+          <li>Vetorização, embeddings e busca semântica</li>
+        </ul>
+        <h4>Interpessoais</h4>
+        <ul>
+          <li>Comunicação Clara</li>
+          <li>Trabalho em Equipe</li>
+          <li>Resolução de Problemas</li>
+          <li>Proatividade</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="project">
+    <h2>Projetos Relevantes</h2>
+
+    <h3>RTLW - Real Time Log Watch</h3>
+    <ul>
+      <li>API de sincronização back-end</li>
+      <li>Agentes para coleta e envio de dados</li>
+      <li>Interface web para visualização em tempo real</li>
+      <li>Filas para processamento assíncrono e WebSocket para atualização instantânea</li>
+    </ul>
+
+    <h3>WAIA - WhatsApp &amp; Telegram AI Assistant</h3>
+    <ul>
+      <li>Interação multicanal via WhatsApp e Telegram (EvolutionAPI)</li>
+      <li>Processamento de linguagem natural com ChatGPT</li>
+      <li>Workflows automáticos orquestrados por n8n</li>
+      <li>Respostas contextuais, integrações e automações inteligentes</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Anderson da Campo — Desenvolvedor &amp; Engenheiro DevOps
+</footer>
+
+</body>
+</html>
